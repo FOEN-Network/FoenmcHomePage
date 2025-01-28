@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh - CN">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF - 8">
-    <meta name="viewport" content="width=device - width, initial - scale = 1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOEN Network</title>
     <style>
         /* 全局样式 */
@@ -18,29 +18,18 @@
         /* 头部样式 */
         header {
             background-color: #333;
-            display: flex;
-            align-items: center;
-            /* 使标题和导航栏在同一高度 */
-        }
-
-        h1 {
-            margin: 0;
             padding: 10px;
-        }
-
-        nav {
-            margin-left: auto;
+            text-align: center;
         }
 
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            /* 初始为横向布局 */
         }
 
         nav ul li {
+            display: inline;
             margin-right: 20px;
         }
 
@@ -53,39 +42,21 @@
             text-decoration: underline;
         }
 
-        /* 媒体查询，当屏幕宽度小于600px时，导航栏纵向显示 */
-        @media (max - width: 600px) {
-            nav ul {
-                flex - direction: column;
-                /* 纵向布局 */
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background - color: #333;
-                text-align: center;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
-
         /* 首页英雄部分样式 */
-      .hero {
+     .hero {
             position: relative;
             height: 400px;
             overflow: hidden;
         }
 
-      .hero img {
+     .hero img {
             width: 100%;
             height: 100%;
-            object - fit: cover;
+            object-fit: cover;
             filter: brightness(70%);
         }
 
-      .hero - content {
+     .hero-content {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -93,106 +64,108 @@
             text-align: center;
         }
 
-      .hero - content h2 {
-            font - size: 36px;
+     .hero-content h2 {
+            font-size: 36px;
             margin-bottom: 20px;
         }
 
-      .hero - content p {
-            font - size: 18px;
+     .hero-content p {
+            font-size: 18px;
             margin-bottom: 30px;
         }
 
-      .cta - button {
-            display: inline - block;
-            background - color: #007BFF;
+     .cta-button {
+            display: inline-block;
+            background-color: #007BFF;
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
-            border - radius: 5px;
-            font - size: 16px;
+            border-radius: 5px;
+            font-size: 16px;
         }
 
-      .cta - button:hover {
-            background - color: #0056b3;
+     .cta-button:hover {
+            background-color: #0056b3;
         }
 
         /* 特色部分样式 */
-      .features {
+     .features {
             padding: 50px;
             text-align: center;
         }
 
-      .features h2 {
+     .features h2 {
             margin-bottom: 30px;
         }
 
-      .feature {
-            display: inline - block;
+     .feature {
+            display: inline-block;
             width: 300px;
             margin: 20px;
-            background - color: #444;
+            background-color: #444;
             padding: 20px;
-            border - radius: 10px;
+            border-radius: 10px;
         }
 
-      .feature img {
+     .feature img {
             width: 80px;
             height: 80px;
         }
 
-      .feature h3 {
+     .feature h3 {
             margin-top: 20px;
             margin-bottom: 10px;
         }
 
         /* 规则部分样式 */
-      .rules {
+     .rules {
             padding: 50px;
             text-align: left;
         }
 
-      .rules h2 {
+     .rules h2 {
             margin-bottom: 20px;
         }
 
-      .rules ul {
+     .rules ul {
             margin-left: 20px;
         }
 
         /* 加入部分样式 */
-      .join {
+     .join {
             padding: 50px;
             text-align: center;
         }
 
-      .join h2 {
+     .join h2 {
             margin-bottom: 20px;
         }
 
-      .join.server - address,
-      .join.server - port {
-            font - size: 20px;
-            font - weight: bold;
+     .join.server-address,
+     .join.server-port {
+            font-size: 20px;
+            font-weight: bold;
         }
 
         /* 社区部分样式 */
-      .community {
+     .community {
             padding: 50px;
             text-align: center;
         }
 
-      .community h2 {
+     .community h2 {
             margin-bottom: 20px;
         }
 
-      .community.cta - button {
-            /* 如有社区按钮特殊样式可在此添加 */
+     .community img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
         }
 
         /* 底部样式 */
         footer {
-            background - color: #333;
+            background-color: #333;
             padding: 10px;
             text-align: center;
         }
@@ -213,11 +186,11 @@
         </nav>
     </header>
     <section id="home" class="hero">
-        <img src="https://s2.loli.net/2025/01/29/JSH5xAUzaZtgE4v.png" alt="Minecraft背景图">
-        <div class="hero - content">
+        <img src="https://s2.loli.net/2025/01/29/JSH5xAUzaZtgE4v.png" alt="FOEN">
+        <div class="hero-content">
             <h2>欢迎来到FOEN的Minecraft世界</h2>
             <p>在这里开启你的独特冒险之旅！</p>
-            <a href="#join" class="cta - button">立即加入</a>
+            <a href="#join" class="cta-button">立即加入</a>
         </div>
     </section>
     <section id="features" class="features">
@@ -249,15 +222,15 @@
     </section>
     <section id="join" class="join">
         <h2>加入我们</h2>
-        <p>Java版服务器地址：<span class="server - address">mc.foen.us.kg</span></p>
-        <p>基岩版服务器地址：<span class="server - address">gmt.rainplay.cn:44071</span></p>
-        <a href="https://minecraft.net/download" class="cta - button" target="_blank">下载Minecraft</a>
-        <a href="minecraft://" class="cta - button" target="_blank">使用手机？点击开始！</a>
+        <p>Java版服务器地址：<span class="server-address">mc.foen.us.kg</span></p>
+        <p>基岩版服务器地址：<span class="server-address">gmt.rainplay.cn:44071</span></p>
+        <a href="https://minecraft.net/download" class="cta-button" target="_blank">下载Minecraft</a>
+        <a href="minecraft://" class="cta-button" target="_blank">使用手机？点击开始！</a>
     </section>
     <section id="community" class="community">
         <h2>社区互动</h2>
-        <p>加入我们频道，与其他玩家交流互动：<a href="https://pd.qq.com/s/h3vgx0rd1?shareSource = 5&businessType = 9"
-                class="cta - button" target="_blank">点击加入</a></p>
+        <p>加入我们频道，与其他玩家交流互动：<a href="https://pd.qq.com/s/h3vgx0rd1?shareSource=5&businessType=9" class="cta-button"
+                target="_blank">点击加入</a></p>
     </section>
     <footer>
         <p>&copy; Copyright FOEN Team 2025.</p>
