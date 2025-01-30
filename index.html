@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnstile Verification</title>
+    <!-- 引入Turnstile脚本，替换YOUR_SITE_KEY为你的实际站点密钥 -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script>
+    <script>
+        function onTurnstileLoad() {
+            turnstile.render('turnstile-container', {
+                sitekey: '<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnstile Verification</title>
+    <!-- 引入Turnstile脚本，替换YOUR_SITE_KEY为你的实际站点密钥 -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script>
+    <script>
+        function onTurnstileLoad() {
+            turnstile.render('turnstile-container', {
+                sitekey: '<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnstile Verification</title>
+    <!-- 引入Turnstile脚本，替换YOUR_SITE_KEY为你的实际站点密钥 -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad" async defer></script>
+    <script>
+        function onTurnstileLoad() {
+            turnstile.render('turnstile-container', {
+                sitekey: '0x4AAAAAAA61d08nF-B-P-DS',
+                callback: onTurnstileVerify
+            });
+        }
+
+        function onTurnstileVerify(token) {
+            // 发送token到服务器进行验证
+            fetch('/verify', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ token: 0x4AAAAAAA61d8I3v22t_xobF9MmKTo30b4 })
+            })
+           .then(response => response.json())
+           .then(data => {
+                if (data.success) {
+                    // 验证成功，重定向到主页
+                    window.location.href = './home.html';
+                } else {
+                    // 验证失败，给出提示
+                    alert('验证失败，请重试。');
+                    // 可以重新渲染Turnstile
+                    turnstile.reset('turnstile-container');
+                }
+            })
+           .catch(error => {
+                console.error('请求出错:', error);
+                alert('发生错误，请稍后重试。');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>请完成验证</h1>
+    <div id="turnstile-container"></div>
+</body>
+
+</html>,
+                callback: onTurnstileVerify
+            });
+        }
+
+        function onTurnstileVerify(token) {
+            // 发送token到服务器进行验证
+            fetch('/verify', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ token: token })
+            })
+           .then(response => response.json())
+           .then(data => {
+                if (data.success) {
+                    // 验证成功，重定向到主页
+                    window.location.href = './home.html';
+                } else {
+                    // 验证失败，给出提示
+                    alert('验证失败，请重试。');
+                    // 可以重新渲染Turnstile
+                    turnstile.reset('turnstile-container');
+                }
+            })
+           .catch(error => {
+                console.error('请求出错:', error);
+                alert('发生错误，请稍后重试。');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>请完成验证</h1>
+    <div id="turnstile-container"></div>
+</body>
+
+</html>',
+                callback: onTurnstileVerify
+            });
+        }
+
+        function onTurnstileVerify(token) {
+            // 发送token到服务器进行验证
+            fetch('/verify', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ token: token })
+            })
+           .then(response => response.json())
+           .then(data => {
+                if (data.success) {
+                    // 验证成功，重定向到主页
+                    window.location.href = './home.html';
+                } else {
+                    // 验证失败，给出提示
+                    alert('验证失败，请重试。');
+                    // 可以重新渲染Turnstile
+                    turnstile.reset('turnstile-container');
+                }
+            })
+           .catch(error => {
+                console.error('请求出错:', error);
+                alert('发生错误，请稍后重试。');
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>请完成验证</h1>
+    <div id="turnstile-container"></div>
+</body>
+
+</html>
